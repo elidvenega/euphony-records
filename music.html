@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #store {
+            background: #000 url('../img/tunes.jpg')no-repeat center/cover;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            overflow-y: hidden;
+            color: #fff;
+            display: flex;
+            
+
+
+        }
+
+        #layer {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.6;
+            position: absolute;
+        }
+
+        h1 {
+            color: #fff;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="store">
+        <div id="layer"></div>
+
+        <h1>Store</h1>
+
+
+    </div>
+
+</body>
+
+</html>
