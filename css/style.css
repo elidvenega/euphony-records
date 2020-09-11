@@ -95,6 +95,33 @@ nav a#openup {
 
 #store p {
     z-index: 1;
+    font-size: 2rem;
+}
+
+/* cards */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 30px;
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 30%
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contain {
+    padding: 2px 16px;
 }
 
 /* Utility Classes */
@@ -111,6 +138,14 @@ nav a#openup {
 
 .text-center {
     text-align: center;
+}
+
+.caption {
+    font-size: 4rem;
+}
+
+.read {
+    font-size: 1.2rem;
 }
 
 
