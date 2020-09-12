@@ -103,7 +103,7 @@ nav a#openup {
     display: flex;
     justify-content: space-around;
     padding: 15px;
-    margin: 30px;
+    margin: 10px;
 
 }
 .card {
@@ -123,7 +123,12 @@ nav a#openup {
 .contain {
     padding: 2px 16px;
 }
-
+/* music img */
+#music-img {
+    background: url('../img/laptop.jpg')no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+}
 /* Utility Classes */
 .container {
     max-width: 1180px;
@@ -147,7 +152,15 @@ nav a#openup {
 .read {
     font-size: 1.2rem;
 }
-
+/* button */
+.btn {
+    background-color: #103063;
+    color: #fff;
+    margin: 100px;
+    width: 20px;
+    height: 50px;
+    padding: 1rem;
+}
 
 /* grid */
 .footer-cols {
