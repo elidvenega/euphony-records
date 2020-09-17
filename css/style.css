@@ -59,7 +59,7 @@ nav a#openup {
 /* Main picture */
 
 #store {
-    background: #000 url('../img/tunes.jpg')no-repeat center/cover;
+    background: #000 url('../img/music.jpg')no-repeat center/cover;
     height: 100vh;
     width: 100%;
     position: relative;
