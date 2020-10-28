@@ -18,24 +18,29 @@ a {
 
 /* Navigation */
 nav {
-    height: 45px;
+    height: 55px;
     width: 100%;
     background-color: #333;
     color: #332222;
     z-index: 2;
     position: fixed;
+    display: flex;
+    justify-content: flex-end;
+
 }
+
 
 nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 
 }
 
 nav li {
     list-style: none;
+    padding: 5px;
 }
 
 nav a {
@@ -45,7 +50,7 @@ nav a {
     text-decoration: none;
     padding: 10px 0;
     color: #eee;
-    text-decoration: none;
+
 }
 
 nav li:hover {
@@ -365,7 +370,7 @@ footer {
     }
 
     .squares h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         font-family: 'Courier New', Courier, monospace;
         margin: 3.7rem;
     }
