@@ -24,23 +24,26 @@ nav {
     color: #332222;
     z-index: 2;
     position: fixed;
-    display: flex;
-    justify-content: flex-end;
 
 }
 
+#title {
+    color: #fff;
+}
 
 nav ul {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
     align-items: center;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
 nav li {
     list-style: none;
     padding: 5px;
+      
+
 }
 
 nav a {
@@ -176,7 +179,7 @@ nav a#openup {
     max-width: 1180px;
     text-align: center;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 2rem;
 }
 
 .section {
