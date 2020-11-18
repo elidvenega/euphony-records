@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #333;
+    --second-color: #252529;
+    --btn-dark: #2C3A47;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +11,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #252529;
+    background-color: var(--second-color);
     margin: 0;
     color: #fff;
     line-height: 1.6;
@@ -20,8 +26,7 @@ a {
 nav {
     height: 55px;
     width: 100%;
-    background-color: #333;
-    color: #332222;
+    background-color: var(--primary-color);
     z-index: 2;
     position: fixed;
 
@@ -42,7 +47,7 @@ nav ul {
 nav li {
     list-style: none;
     padding: 5px;
-      
+
 
 }
 
@@ -95,11 +100,17 @@ nav a#openup {
 #store h1 {
     font-size: 4rem;
     z-index: 1;
+    margin-top: 90px;
 }
+
 
 #store p {
     z-index: 1;
     font-size: 2rem;
+}
+
+#store .btn2 {
+    margin-top: 30px;
 }
 
 /* grid part */
@@ -199,27 +210,31 @@ nav a#openup {
 }
 
 
-/* button */
+/* buttons */
 .btn {
-    background-color: #103063;
+    background-color: var(--btn-dark);
     color: #fff;
     padding: 1rem 1.4rem;
     display: inline-block;
     margin: 30px;
+    width: 100px;
+    border-radius: 2%;
 }
 
 .btn:hover {
-    background-color: #143f85;
+    background-color: #182C61;
     color: #fff;
 }
 
 .btn2 {
-    background-color: #333;
+    background-color: var(--primary-color);
     color: #fff;
-    font-size: 1.4rem;
-    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
     display: inline-block;
     margin-top: 100px;
+    z-index: 1;
+    border-radius: 2%;
 
 }
 
@@ -233,7 +248,7 @@ nav a#openup {
 #music {
     background: url('../img/music.jpg')no-repeat bottom/cover;
     color: #000;
-    height: 60vh;
+    height: 70vh;
     width: 100%;
 }
 
@@ -268,7 +283,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-    height: 50px;
+    height: 70px;
 }
 
 
@@ -393,7 +408,7 @@ footer {
     }
 
     .btn2 {
-        background-color: #333;
+        background-color: var(--primary-color);
         color: #fff;
         font-size: .9rem;
         padding: .7rem .9rem;
@@ -413,17 +428,17 @@ footer {
 
 }
 
-.cf:before,
-.cf:after {
+.rs:before,
+.rs:after {
     content: "";
     display: table;
 }
 
-.cf:after {
+.rs:after {
     clear: both;
 }
 
-.cf {
+.rs {
     zoom: 1;
 }
 
