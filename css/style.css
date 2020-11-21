@@ -46,7 +46,7 @@ nav ul {
 nav li {
     list-style: none;
     padding: 5px;
-
+    animation: slideInFromLeft 1s ease-in;
 
 }
 
@@ -101,6 +101,7 @@ nav a#openup {
     z-index: 1;
     margin-top: 90px;
     color: #fff;
+    animation: slideInFromTop 1s ease-in;
 }
 
 
@@ -108,10 +109,12 @@ nav a#openup {
     z-index: 1;
     font-size: 2rem;
     color: #fff;
+    animation: slideInFromLeft 1s ease-in;
 }
 
 #store .btn2 {
     margin-top: 30px;
+    animation: slideInFromLeft 1s ease-in;
 }
 
 /* grid part with images in squares*/
@@ -315,6 +318,29 @@ footer {
     text-align: center;
     padding: 40px;
     height: 70px;
+}
+
+/* Animation */
+
+/* Animation */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 
