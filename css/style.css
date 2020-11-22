@@ -200,6 +200,13 @@ nav a#openup {
     padding: 2rem;
 }
 
+.container-2 {
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 .section {
     padding: 2rem 0;
 }
@@ -403,14 +410,6 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
-
 /* media queries */
 @media screen and (max-width: 580px) {
     .hide-on-small {
@@ -502,8 +501,6 @@ footer {
     .squares {
         display: flex;
         flex-direction: column;
-
-
     }
 
     .squares img {
@@ -518,11 +515,12 @@ footer {
 
     /* button */
     .btn {
-        background-color: #103063;
+        background-color: var(--primary-color);
         color: #fff;
         padding: .7rem .9rem;
         display: inline-block;
         margin: 30px;
+        width: 7rem;
     }
 
     .btn:hover {
@@ -543,6 +541,10 @@ footer {
     .btn2:hover {
         background-color: #444;
         color: #fff;
+    }
+
+    .container-2 {
+        padding: 0;
     }
 
     .footer-cols {
@@ -566,7 +568,6 @@ footer {
 }
 
 @media screen and (max-width: 780px) {
-
 
     footer .footer-cols {
         display: none;
