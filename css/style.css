@@ -418,41 +418,12 @@ footer a {
 
 /* media queries */
 @media screen and (max-width: 580px) {
+
     .hide-on-small {
         display: none;
     }
 
-    #store {
-        height: 70vh;
-    }
-
-    #music-img {
-        height: 70vh;
-    }
-
-    #music {
-        height: 70vh;
-    }
-
-    #showcase .container {
-        margin-top: 15vh;
-    }
-
-    #store h1 {
-        font-size: 2rem;
-    }
-
-    .caption {
-        font-size: 2rem;
-    }
-
-    #store p {
-        font-size: 1rem;
-    }
-
-    .lead {
-        font-size: 1rem;
-    }
+    /* Nav */
 
     nav {
         height: auto;
@@ -504,13 +475,48 @@ footer a {
         position: relative;
     }
 
+    /* Headers and images */
+    #store {
+        height: 70vh;
+    }
+
+    #music-img {
+        height: 70vh;
+    }
+
+    #music {
+        height: 70vh;
+    }
+
+    #showcase .container {
+        margin-top: 15vh;
+    }
+
+    #store h1 {
+        font-size: 2rem;
+    }
+
+    .caption {
+        font-size: 2rem;
+    }
+
+    #store p {
+        font-size: 1rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+
+    /* img squares */
     .squares {
         display: flex;
         flex-direction: column;
     }
 
     .squares img {
-        height: 20vh;
+        height: 15vh;
     }
 
     .squares h1 {
@@ -540,7 +546,7 @@ footer a {
         font-size: .9rem;
         padding: .7rem .9rem;
         display: inline-block;
-        margin-top: 100px;
+        margin-top: 15px;
         width: 9rem;
 
     }
@@ -567,6 +573,11 @@ footer a {
         color: #fff;
     }
 
+    /* utilities */
+    .container {
+        padding: 1rem;
+
+    }
 
     .container-2 {
         padding: 0;
@@ -576,8 +587,9 @@ footer a {
         display: none;
     }
 
-    footer .links {
-        display: flex;
+    footer a {
+        padding: 2px;
+        font-size: 20px;
     }
 
 }
