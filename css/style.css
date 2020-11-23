@@ -290,7 +290,7 @@ nav a#openup {
 }
 
 /* grid */
-.footer-cols {
+.grid-cols {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
@@ -300,15 +300,15 @@ nav a#openup {
 
 }
 
-.footer-cols ul {
+.grid-cols ul {
     list-style: none;
 }
 
-.footer-cols li a {
+.grid-cols li a {
     color: #000;
 }
 
-.footer-cols ul li:first-child {
+.grid-cols ul li:first-child {
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
     border-bottom: #444 solid 1px;
@@ -316,18 +316,24 @@ nav a#openup {
 
 }
 
+
+
 /* footer */
 
 footer {
     background-color: var(--primary-color);
-    color: #fff;
+    color: rgb(59, 59, 59);
     font-size: 1.5rem;
     text-align: center;
     padding: 40px;
     height: 70px;
 }
 
-/* Animation */
+footer a {
+    color: #fff;
+    padding: 10px;
+}
+
 
 /* Animation */
 @keyframes slideInFromTop {
@@ -445,7 +451,7 @@ footer {
     }
 
     .lead {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     nav {
@@ -520,28 +526,47 @@ footer {
         padding: .7rem .9rem;
         display: inline-block;
         margin: 30px;
-        width: 7rem;
+        width: 9rem;
     }
 
     .btn:hover {
-        background-color: #143f85;
+        background-color: var(--second-color);
         color: #fff;
     }
 
-    .btn2 {
+    .btn-1 {
+        background-color: var(--btn-dark);
+        color: #fff;
+        font-size: .9rem;
+        padding: .7rem .9rem;
+        display: inline-block;
+        margin-top: 100px;
+        width: 9rem;
+
+    }
+
+    .btn-1:hover {
+        background-color: var(--btn-dark-two);
+        color: #fff;
+    }
+
+
+    .btn-2 {
         background-color: var(--primary-color);
         color: #fff;
         font-size: .9rem;
         padding: .7rem .9rem;
         display: inline-block;
         margin-top: 100px;
+        width: 9rem;
 
     }
 
-    .btn2:hover {
+    .btn-2:hover {
         background-color: #444;
         color: #fff;
     }
+
 
     .container-2 {
         padding: 0;
@@ -549,6 +574,10 @@ footer {
 
     .footer-cols {
         display: none;
+    }
+
+    footer .links {
+        display: flex;
     }
 
 }
@@ -569,7 +598,7 @@ footer {
 
 @media screen and (max-width: 780px) {
 
-    footer .footer-cols {
+    .grid-cols {
         display: none;
     }
 }
