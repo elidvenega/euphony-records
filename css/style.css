@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -24,7 +25,7 @@ a {
 
 /* Navigation */
 nav {
-    height: 55px;
+    height: 60px;
     width: 100%;
     background-color: var(--primary-color);
     z-index: 2;
@@ -135,7 +136,7 @@ nav a#openup {
     color: #fff;
     text-align: center;
     padding: 1.4rem;
-    height: 50vh;
+    height: 55vh;
     z-index: 1;
 }
 
@@ -144,7 +145,7 @@ nav a#openup {
     color: #fff;
     text-align: center;
     padding: 1.4rem;
-    height: 50vh;
+    height: 55vh;
     z-index: 1;
 }
 
@@ -153,7 +154,7 @@ nav a#openup {
     color: #fff;
     text-align: center;
     padding: 1.4rem;
-    height: 50vh;
+    height: 55vh;
 }
 
 .square-3 {
@@ -161,7 +162,7 @@ nav a#openup {
     color: #fff;
     text-align: center;
     padding: 1.4rem;
-    height: 50vh;
+    height: 55vh;
 }
 
 
@@ -228,11 +229,11 @@ nav a#openup {
 .btn {
     background-color: var(--primary-color);
     color: #fff;
-    height: 20px;
+    height: 50px;
     padding: 15px;
     display: inline-block;
     margin: 30px;
-    width: 100px;
+    width: 120px;
     border-radius: 4%;
     text-align: center;
     z-index: 1;
@@ -246,11 +247,11 @@ nav a#openup {
 .btn-1 {
     background-color: var(--btn-dark);
     color: #fff;
-    height: 20px;
+    height: 50px;
     padding: 15px;
     display: inline-block;
     margin: 30px;
-    width: 100px;
+    width: 120px;
     border-radius: 4%;
     text-align: center;
 }
@@ -263,13 +264,13 @@ nav a#openup {
 .btn-2 {
     background-color: var(--primary-color);
     color: #fff;
-    height: 20px;
+    height: 50px;
     padding: 15px;
     display: inline-block;
     margin-top: 70px;
     z-index: 1;
     border-radius: 4%;
-    width: 100px;
+    width: 120px;
     text-align: center;
 
 }
@@ -325,12 +326,12 @@ footer {
     font-size: 1.5rem;
     text-align: center;
     padding: 40px;
-    height: 70px;
+    height: 120px;
 }
 
 footer a {
     color: #fff;
-    padding: 10px;
+    padding: 10px; 
 }
 
 
