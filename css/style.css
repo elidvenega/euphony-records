@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #252529;
-    --second-color: #3d3d3d;
+    --secondary-color: #3d3d3d;
     --btn-dark: #2C3A47;
     --btn-dark-two: #303952;
 }
@@ -239,7 +239,7 @@ nav a#openup {
 }
 
 .btn:hover {
-    background-color: var(--second-color);
+    background-color: var(--secondary-color);
     color: #fff;
 }
 
@@ -284,7 +284,7 @@ nav a#openup {
 #music {
     background: url('../img/music.jpg')no-repeat bottom/cover;
     color: #000;
-    height: 85vh;
+    height: 95vh;
     width: 100%;
 }
 
@@ -535,7 +535,7 @@ footer a {
     }
 
     .btn:hover {
-        background-color: var(--second-color);
+        background-color: var(--secondary-color);
         color: #fff;
     }
 
