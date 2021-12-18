@@ -18,54 +18,63 @@ body {
     line-height: 1.6;
 }
 
+
 a {
     text-decoration: none;
 }
 
-/* Navigation */
-nav {
-    height: 60px;
-    width: 100%;
-    background-color: var(--primary-color);
-    z-index: 2;
-    position: fixed;
-
-}
-
-#title {
-    color: #fff;
-}
-
-nav ul {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-nav li {
+li {
     list-style: none;
-    padding: 5px;
-    animation: slideInFromLeft 1s ease-in;
-
 }
 
-nav a {
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 0;
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
     color: #fff;
-
 }
 
-nav li:hover {
-    background-color: #444;
+.nav-links a {
+    color: #fff;
 }
 
-nav a#openup {
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type="checkbox"] {
     display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
 }
 
 /* Main picture */
@@ -330,7 +339,7 @@ footer {
 
 footer a {
     color: #fff;
-    padding: 10px; 
+    padding: 10px;
 }
 
 
@@ -418,60 +427,44 @@ footer a {
 /* media queries */
 @media screen and (max-width: 580px) {
 
-    .hide-on-small {
+
+    .menu {
         display: none;
-    }
-
-    /* Nav */
-
-    nav {
-        height: auto;
-        border-bottom: 0;
-    }
-
-    nav ul {
-        display: none;
-        height: auto;
-    }
-
-    nav li {
-        width: 100%;
-        float: left;
-        position: relative;
-    }
-
-    nav a {
-        text-align: left;
-        width: 100%;
-        text-indent: 25px;
-        background: #333;
-        border-bottom: 1px solid #555;
-    }
-
-    nav a:hover {
-        background: #444;
-    }
-
-    nav a#openup:after {
-        content: "|||";
-        transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        /* IE 9 */
-        -webkit-transform: rotate(-90deg);
-        /* Safari and Chrome */
-        width: 30px;
-        height: 30px;
-        display: inline-block;
         position: absolute;
-        right: 5px;
-        top: 20px;
+        background-color: teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
     }
 
-    nav a#openup {
+    .menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    /*  Where toggle happens  */
+    input[type="checkbox"]:checked~.menu {
         display: block;
-        background-color: #333;
-        width: 100%;
-        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: #4c9e9e;
     }
 
     /* Headers and images */
