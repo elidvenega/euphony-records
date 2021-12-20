@@ -18,64 +18,55 @@ body {
     line-height: 1.6;
 }
 
-
 a {
     text-decoration: none;
-}
-
-li {
+  }
+  li {
     list-style: none;
-}
-
-/* NAVBAR STYLING STARTS */
-.navbar {
+  }
+  /* NAVBAR STYLING STARTS */
+  .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     background-color: teal;
     color: #fff;
-}
-
-.nav-links a {
+  }
+  .nav-links a {
     color: #fff;
-}
-
-/* LOGO */
-.logo {
-    font-size: 10px;
-}
-
-/* NAVBAR MENU */
-.menu {
+  }
+  /* LOGO */
+  .logo {
+    font-size: 32px;
+  }
+  /* NAVBAR MENU */
+  .menu {
     display: flex;
     gap: 1em;
     font-size: 18px;
-}
-
-.menu li:hover {
+  }
+  .menu li:hover {
     background-color: #4c9e9e;
     border-radius: 5px;
     transition: 0.3s ease;
     font-size: 1.5rem;
-}
-
-.menu li {
+  }
+  .menu li {
     padding: 5px 14px;
-}
-
-/*RESPONSIVE NAVBAR MENU STARTS*/
-/* CHECKBOX HACK */
-input[type="checkbox"] {
+  }
+  
+  /*RESPONSIVE NAVBAR MENU STARTS*/
+  /* CHECKBOX HACK */
+  input[type="checkbox"] {
     display: none;
-}
-
-/*HAMBURGER MENU*/
-.hamburger {
+  }
+  /*HAMBURGER MENU*/
+  .hamburger {
     display: none;
     font-size: 24px;
     user-select: none;
-}
+  }
 
 /* Main picture */
 
@@ -425,8 +416,7 @@ footer a {
 }
 
 /* media queries */
-@media screen and (max-width: 580px) {
-
+@media (max-width: 580px) {
 
     .menu {
         display: none;
@@ -436,37 +426,30 @@ footer a {
         left: 0;
         text-align: center;
         padding: 16px 0;
-    }
-
-    .menu li:hover {
+      }
+      .menu li:hover {
         display: inline-block;
         background-color: #4c9e9e;
         transition: 0.3s ease;
-    }
-
-    .menu li+li {
+      }
+      .menu li + li {
         margin-top: 12px;
-    }
-
-    /*  Where toggle happens  */
-    input[type="checkbox"]:checked~.menu {
+      }
+      /*  Where toggle happens  */
+      input[type="checkbox"]:checked ~ .menu {
         display: block;
-    }
-
-    .hamburger {
+      }
+      .hamburger {
         display: block;
-    }
-
-    .dropdown {
+      }
+      .dropdown {
         left: 50%;
         top: 30px;
         transform: translateX(35%);
-    }
-
-    .dropdown li:hover {
+      }
+      .dropdown li:hover {
         background-color: #4c9e9e;
-    }
-
+      }
     /* Headers and images */
     #store {
         height: 70vh;
@@ -586,28 +569,14 @@ footer a {
 
 }
 
-.rs:before,
-.rs:after {
-    content: "";
-    display: table;
-}
-
-.rs:after {
-    clear: both;
-}
-
-.rs {
-    zoom: 1;
-}
-
-@media screen and (max-width: 780px) {
+@media (max-width: 780px) {
 
     .grid-cols {
         display: none;
     }
 }
 
-@media screen and (max-height: 580px) {
+@media (max-height: 580px) {
     #store p.lead {
         display: none;
     }
