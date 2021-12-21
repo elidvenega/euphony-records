@@ -245,7 +245,6 @@ input[type=checkbox] {
 
 .container {
     max-width: 1180px;
-    text-align: center;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -272,7 +271,6 @@ input[type=checkbox] {
 .caption {
     font-size: 3rem;
 }
-
 
 /* buttons */
 
